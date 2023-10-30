@@ -1,0 +1,93 @@
+import { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { useNavigate } from 'react-router-dom'
+import TextInput from 'components/FormElements'
+import Button from 'components/Button'
+import Banner from 'assets/images/bann_img1.png'
+import {
+    Maincontainer,
+} from 'styles/views/LandingPage/ForgetPassword'
+import Logo from 'assets/images/ABP-New-Logo.jpg'
+
+import { AddressText, BannerImage, HeadingText, InputWrapper, LeftWrapper, LoginDetails, RightWrapper, SubWrapper } from 'styles/views/LandingPage/Login'
+import { Form } from 'antd'
+import { MainLogo } from 'styles/views/Deshboard'
+
+interface IFormData {
+    email?: string
+}
+
+const ChangePassword = () => {
+    const [isSuccessVisible, setIsSuccessVisible] = useState(false)
+    const [isErrorVisible] = useState(false)
+
+    const navigate = useNavigate()
+    const {
+        control,
+        formState,
+        handleSubmit,
+    } = useForm<IFormData>({
+        // resolver: yupResolver(emailSchema),
+        mode: 'onSubmit',
+        reValidateMode: 'onBlur',
+        shouldFocusError: true,
+    })
+
+    const formData = () => {
+        setIsSuccessVisible(true)
+    }
+
+    return (
+        <Maincontainer>
+            <LeftWrapper>
+                <SubWrapper>
+                    <MainLogo src={Logo} width={110} height={70} />
+
+                    <LoginDetails>
+                        <HeadingText>Change password?</HeadingText>
+                        <AddressText>Please enter your previous password </AddressText>
+                        <Form >
+                            <InputWrapper>
+                                <TextInput name="password" placeholder="password" control={control} />
+
+                            </InputWrapper>
+                            <AddressText>Please enter your new password </AddressText>
+
+                            <InputWrapper>
+                                <TextInput name="password" placeholder="password" control={control} />
+
+                            </InputWrapper>
+                            <AddressText>Please enter your confirm password </AddressText>
+
+                            <InputWrapper>
+                                <TextInput name="password" placeholder="password" control={control} />
+
+                            </InputWrapper>
+                            <Button label="Submit" type="submit" />
+                        </Form>
+                        {/* <Button label="Login" type="submit" onClick={() => navigate('/')} /> */}
+                        {/* <LoginButton label="Login" type="submit" onClick={() => navigate('/')} /> */}
+                    </LoginDetails>
+                </SubWrapper>
+            </LeftWrapper>
+            <RightWrapper>
+                <BannerImage src={Banner} />
+            </RightWrapper>
+
+            {isSuccessVisible && (
+                <></>
+                // <Alert type="success" description={`Reset link successfully sent to ri*****y@gmail.com`} />
+            )}
+            {isErrorVisible && (
+                <></>
+                // <Alert
+                //     type="error"
+                //     description="Email id entered was not found. Please enter correct email address"
+                // />
+            )}
+        </Maincontainer>
+    )
+}
+
+export default ChangePassword
+

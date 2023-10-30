@@ -1,0 +1,204 @@
+.ant-layout-sider-collapsed .admin-name {
+  display: none;
+}
+
+.admin-name {
+  margin-left: 10px;
+}
+
+.ant-input-affix-wrapper,
+#register .Selectgender .ant-select .ant-select-selector {
+  /* max-width: 372px;
+  width: 100%;
+  border: 1px solid #dadbf1;
+  border-radius: 24px;
+  padding: 10px 24px; */
+  outline: none;
+}
+
+.ant-table-container {
+  /* overflow: auto; */
+}
+
+.OtpVerification .ant-modal-footer {
+  display: none;
+}
+
+#register .Selectgender .ant-select .ant-select-selector {
+  height: 42px;
+  padding: 5px 24px 0;
+  /* border: 0px solid #dadbf1; */
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px
+}
+
+::-webkit-scrollbar-button {
+  background: #ccc
+}
+
+::-webkit-scrollbar-track-piece {
+  background: #888
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eee
+}
+
+.custom-status {
+  display: flex;
+  place-items: center;
+}
+
+.status-Pending,
+.status-approved,
+.status-ongoing,
+.status-dropped,
+.status-cancelled {
+  padding: 6px 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  min-width: 75px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.status-Pending {
+  background-color: #fdb338;
+
+}
+
+.status-approved {
+  background-color: #008000;
+
+}
+
+.status-ongoing {
+  background-color: #373e97;
+
+}
+
+.status-dropped {
+  background-color: #011001;
+
+}
+
+.status-cancelled {
+  background-color: #ff4545;
+}
+
+.sc-cabOPr.fkfiXr {
+  height: calc(100vh - 100px);
+  overflow: auto;
+}
+
+.custom-status.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.selectCabChange .ant-select {
+  width: 190px !important;
+}
+
+.subItemsMenu {
+  color: #fff;
+}
+
+.status-success {
+  background-color: #008000;
+  padding: 6px 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  min-width: 75px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.excel-sheet-upadate {
+  overflow: hidden;
+  padding: 5px 9px;
+  display: flex;
+  margin: 5px 0;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.excel-sheet-upadate label {
+  font-size: 14px;
+  font-weight: 600;
+
+}
+
+.excel-sheet-input {
+  position: relative;
+  border: 1px solid #ddd;
+  width: 120px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.excel-sheet-input input {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999999999;
+  cursor: pointer;
+  position: absolute;
+}
+
+.excel-sheet-upadate button {
+  cursor: pointer;
+  background: #373e97;
+  border: 1px solid #373e97;
+  height: 29px;
+  margin: 6px 0;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* .ant-tabs-nav-wrap div#rc-tabs-1-tab-2, */
+.ant-tabs-nav-wrap div.ant-tabs-tab-btn {
+  padding: 9px 4px;
+}
+
+.ant-tabs-tab {
+  height: 42px;
+}
+
+.excel-sheet-upadate {}
+
+.ant-table-thead th.ant-table-cell,
+.ant-table-thead td.ant-table-cell {
+  background-color: #373e97 !important;
+  background-color: #373e97 !important;
+  color: #fff !important;
+}
+
+.subItemsMenu span {
+  margin-right: 10px;
+}
+
+.ant-card.ant-card-bordered {
+  margin: 0 0 15px;
+}
+
+.avatar-uploader,
+.ant-upload-select {
+  overflow: hidden;
+}
+
+/* td.ant-table-cell {
+  word-break: break-word;
+} */
